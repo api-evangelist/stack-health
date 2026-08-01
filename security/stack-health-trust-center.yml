@@ -1,0 +1,14 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+source: https://trust.stackhealthcare.com/
+url: https://trust.stackhealthcare.com/
+certifications:
+- HIPAA
+evidence:
+- source: https://trust.stackhealthcare.com/
+  keywords:
+  - hipaa
+  - trust center
+- source: https://stackhealthcare.com/privacy-policy
+  note: Privacy policy documents Stack as a HIPAA Business Associate processing PHI, with encryption in transit and at rest and role-based access controls.

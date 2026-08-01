@@ -1,7 +1,17 @@
 aid: stack-health
 name: Stack Health
-description: Stack Health is a company surfaced as a portfolio company of 8vc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Stack Healthcare (stackhealthcare.com) is a health-insurance fintech offering
+  affordable, flexible coverage for small businesses and their teams. Operating
+  as a technology company rather than a bank, Stack acts as a HIPAA Business
+  Associate to employer-sponsored health plans, processing Protected Health
+  Information for enrollment and benefits administration, and partners with
+  Stripe for payments and Celtic Bank for issuing commercial cards. The company
+  was surfaced as a portfolio company of 8vc and added to the API Evangelist
+  network. As of this enrichment pass Stack publishes no public API, developer
+  portal, SDK, or documentation surface — the product is a waitlist-gated web
+  application — so this profile captures the identity, security, and compliance
+  posture that is publicly verifiable.
 url: https://raw.githubusercontent.com/api-evangelist/stack-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +19,30 @@ x-backed-by:
 - 8vc
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://stackhealthcare.com/favicon.ico
 tags:
 - Company
+- Health Insurance
+- Healthcare
+- Fintech
+- Insurance
+- Employee Benefits
+- Small Business
+- HIPAA
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,28 @@ maintainers:
 common:
 - type: Website
   url: https://stackhealthcare.com
+- type: SignUp
+  url: https://app.stackhealthcare.com/quote
+- type: TermsOfService
+  url: https://stackhealthcare.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://stackhealthcare.com/privacy-policy
+- type: TrustCenter
+  url: https://trust.stackhealthcare.com/
+- type: Compliance
+  url: https://trust.stackhealthcare.com/
+- type: SecurityTxt
+  url: well-known/stack-health-security.txt
+- type: WellKnown
+  url: well-known/stack-health-well-known.yml
+- type: DomainSecurity
+  url: security/stack-health-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/stack-health-vulnerability-disclosure.yml
+- type: Security
+  url: https://app.stackhealthcare.com/.well-known/security.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
